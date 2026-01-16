@@ -1,0 +1,13 @@
+# Python stuff
+__pycache__/
+*.py[cod]
+venv/
+
+# Dataset (Too large for GitHub, users should run setup_data.py)
+data/
+
+# Local Model (Users should retrain it)
+pca_model.pkl
+
+# Environment variables
+.env
