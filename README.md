@@ -11,11 +11,8 @@ Ce projet implémente un système de recommandation de films utilisant l'apprent
 
 
 * **Filtrage Collaboratif (Item-Based) :** Recommande des films similaires en se basant sur l'historique des notes des utilisateurs. 
-
 * **Algorithme PCA :** Utilise `sklearn.decomposition.PCA` pour compresser la matrice de données clairsemée (sparse matrix).
-
 * **Mesure de Similitude :** Utilise la similarité cosinus (Cosine Similarity) pour calculer la proximité entre les vecteurs de films.
-
 * **Interface Web :** Application Flask simple et réactive pour interagir avec le modèle.  
 
 
@@ -27,11 +24,8 @@ Ce projet implémente un système de recommandation de films utilisant l'apprent
 Le pipeline de données suit les étapes suivantes : 
 
 1.  **Ingestion :** Chargement du dataset MovieLens (100k ratings).
-
 2.  **Transformation :** Création d'une matrice pivot `Films x Utilisateurs`.
-
 3.  **Réduction :** Application de l'ACP pour réduire le bruit et extraire les composants principaux.
-
 4.  **Inférence :** Calcul des plus proches voisins via la similarité cosinus.  
 
 
@@ -73,7 +67,6 @@ Ce projet a été développé sous Windows 11 avec Python 3.x.
 ```bash
 
 git clone https://github.com/zakaria-bouzouba/movie-recommender-pca.git
-
 cd pca-movie-recs
 
 ```
@@ -85,7 +78,6 @@ cd pca-movie-recs
 ```powershell
 
 python -m venv venv
-
 .\venv\Scripts\Activate
 
 ```
@@ -141,17 +133,11 @@ Accédez ensuite à http://127.0.0.1:5000 dans votre navigateur.
 pca_movie_recs/
 
 ├── app.py           # Point d'entrée de l'application Web Flask
-
 ├── recommender.py   # Logique PCA et calcul de similarité
-
 ├── setup_data.py    # Script d'automatisation de téléchargement des données
-
 ├── requirements.txt # Liste des dépendances Python
-
 ├── templates/       # Fichiers HTML
-
 │   └── index.html
-
 └── data/            # (Ignoré par Git) Dossier contenant les CSV MovieLens
 
 ```
@@ -171,7 +157,6 @@ L'utilisation de l'ACP (PCA) permet de transformer la matrice de notations, qui 
 
 
 * D'accélérer les calculs de similarité. 
-
 * De capturer des corrélations implicites entre les films (ex: les films de science-fiction notés similairement par différents groupes d'utilisateurs).
 
 
@@ -180,6 +165,9 @@ L'utilisation de l'ACP (PCA) permet de transformer la matrice de notations, qui 
 
 
 
-**Auteur :** Zakaria Bouzouba
+## 👤 Auteur
+**Zakaria BOUZOUBA**
 
-**Cours :** Analyse des données multidimensionnelles
+Projet réalisé dans le cadre du module *Analyse des données multidimensionnelles*.
+
+> Encadré par : **Prof. Raby GUERBAZ**
